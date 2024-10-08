@@ -1,7 +1,7 @@
 ###
 # Printing student's personal data
 #
-name = "Adam"
+name = "Jakub"
 years_old = 22
 height = 180
 
