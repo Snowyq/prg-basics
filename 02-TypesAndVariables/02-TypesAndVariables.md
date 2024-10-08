@@ -210,7 +210,7 @@ stalj@uek.krakow.pl
     #
     speed_kmh = 70
     speed_ms = ...
-    print(speed_kmh, "km/h = ", speed_ms, "m/s")
+     print(speed_kmh, "km/h = ", speed_ms, "m/s")
     ```
 
 
