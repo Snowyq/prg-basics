@@ -1,4 +1,4 @@
-def select_fibonacci_nth(n):
+def f(n):
   curr = 1
   prev = 0
   if n == 1:
@@ -12,4 +12,4 @@ def select_fibonacci_nth(n):
     if i == n:
       return curr
     
-print(select_fibonacci_nth(9))
+print(f(9))
