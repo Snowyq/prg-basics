@@ -18,6 +18,6 @@ to_binary = bin(304)
 
 to_hex = hex(304)
 
-unicode = ascii('$')
+unicode = ord('$')
 
 module = abs(-17)
