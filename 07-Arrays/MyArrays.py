@@ -1,14 +1,29 @@
 import math
 
-def largest(arr):
-  return sorted(arr, reverse=True)[0]
+def max(arr , n = 1):
+  return sorted(arr, reverse=True)[n - 1]
+
+def min(arr):
+  return sorted(arr)[0]
 
 def amplitude(arr):
-  return largest(arr) - sorted(arr)[0]
+  return max(arr) - sorted(arr)[0]
 
 def median(arr):
-  return sorted(arr)[len(arr)/2] if len(arr) % 2 == 0 else (sorted(arr)[math.floor(len(arr)/2)] + sorted(arr)[math.ceil(len(arr)/2)/2)])
+  sorted_arr = sorted(arr)
+  middle = len(arr) / 2
+  if len(arr) % 2 == 0:
+    return (sorted_arr[math.floor(middle)] + sorted_arr[math.ceil(middle)]) / 2 
+  else:
+    return sorted_arr[math.floor(middle)]
 
 
-median([3,2,1])
-median([3,2,2,1])
+def get_min_max(arr):
+  return [min(arr),max(arr)]
+
+
+def arr_seperated(arr):
+  return '-'.join(map(lambda el: str(el),arr))
+
+
+
