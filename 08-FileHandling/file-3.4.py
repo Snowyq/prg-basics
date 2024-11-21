@@ -10,7 +10,7 @@ with open(email_file, 'r', encoding='utf-8') as file:
         print(line)
   # print(f_lines[6])
   # print(f_lines[9][32])
-  # print(  ord(f_lines[9][32]))
+  # print(  ord(f_lines[9][32])) 
 
 pattern = r'€(\d+)'
 sum = 0
