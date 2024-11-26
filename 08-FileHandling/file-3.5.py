@@ -8,15 +8,15 @@ username = input('Enter username')
 password = input('Enter password')
 
 # pattern (criteria) for username and password
-username_pattern = ...
-password_pattern = ...
+username_pattern = r"[a-z]{6,}\b"
+password_pattern = r"[a-z,A-Z,_,0-9]{8,}"
 
 # check if username and password are ok
 username_match = re.match(username_pattern,username)
-...
+password_match = re.match(password_pattern,password)
 
 # print results
-if ... and ...:
-   print(...)
+if username_match and password_match:
+   print('you are logged in')
 else:
-   ... 
+   print('wrong password or username')
