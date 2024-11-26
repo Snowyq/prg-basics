@@ -46,4 +46,16 @@ print('recipient:', recipient_mail)
 print('subject:', mail_subject)
 print(mail_body)
 
+def email_sender():
+  return sender_mail
+
+def email_recipient():
+  return recipient_mail
+
+def email_subject():
+  return mail_subject
+
+def email_body():
+  return mail_body
+
 
