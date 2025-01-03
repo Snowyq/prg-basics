@@ -1,4 +1,4 @@
-###
+``###
 # Prints some array elements
 #
 
